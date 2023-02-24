@@ -1,1 +1,4 @@
-console.log("checked");
+// console.log("checked");
+
+let ;
+console.log(text);
