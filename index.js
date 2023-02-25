@@ -125,31 +125,17 @@
 // let b = 5;
 // console.log(a != b);
 
-let a = 8;
-let b = 7;
-let c = 9;
+// let a = 8;
+// let b = 7;
+// let c = 9;
 
-if(a > b && b > c){
-    console.log(a);
-}else if(b > a && a > c){
-    console.log(b);
-}else{
-    console.log(c);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// if(a > b && b > c){
+//     console.log(a);
+// }else if(b > a && a > c){
+//     console.log(b);
+// }else{
+//     console.log(c);
+// }
 
 
 
