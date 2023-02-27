@@ -14,6 +14,10 @@
 // console.log(n);
 
 
+// !! privmative: -  javascript data type 8 ta. number, string, simbol, null , undefined, boolean, bigint,
+// ?? non primativ data type objects - bular: array, function, object:
+
+
 // let ar = ["Asilbek" , 19 , "Muhammadsaid"];
 // let obj = {
 //     name: "webbrain",
