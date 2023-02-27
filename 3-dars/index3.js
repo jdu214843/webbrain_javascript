@@ -12,6 +12,7 @@
 
 // console.log(User.admin)
 
+// !! if va else bo'yicha mustahkamlash uchun masalalar
 
 
 
