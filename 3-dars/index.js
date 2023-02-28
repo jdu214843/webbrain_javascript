@@ -13,7 +13,7 @@
 // if (brand === 'ECMAScript') console.log('Right!');
 // else console.log('You dont now ECMAScript');
 
-// // 3 - masala:
+// 3 - masala:
 // let num = -1;
 // if (num === 0) console.log('0 kiritdingiz');
 // else if (num >= 1) console.log('1 ga teng va undan dan yuqori raqam');
