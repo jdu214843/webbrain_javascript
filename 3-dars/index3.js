@@ -1,16 +1,4 @@
-// !! if and else masalalar
 
-// function User(){
-//     User = {
-//         admin: false
-//     }
-// }
-// let user = new User();
-// User = {
-//     admin: true
-// };
-
-// console.log(User.admin)
 
 // !! if va else bo'yicha mustahkamlash uchun masalalar
 
@@ -248,3 +236,6 @@
 // console.log(fruits);
 // const numbers = [25,90 ,21,1];
 // console.log(Math.min.apply(null,numbers));
+
+
+
