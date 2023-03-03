@@ -74,3 +74,30 @@
 
 //     b = 0;
 // }
+
+// a = false;
+// b = true;
+// c = true;
+
+// if(a) {
+//     console.log('a');
+// } else if(b) { // bajariladi
+//     console.log('b1');
+// } else if(c) { // bajarilmaydi
+//     console.log('c1');
+// } else {
+//     console.log('nothing');
+// }
+
+
+// if (a) {
+//     console.log('a');
+// }
+// if (b) {// bajariladi
+//     console.log('b2');
+// }
+// if (c) {// bajariladi
+//     console.log('c2');
+// } else {
+
+// }
