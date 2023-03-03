@@ -1,4 +1,4 @@
-// ?? 5-dars do while / while | function
+// ?? 5-dars Do while and while | function
 
 
 // !! uyga vazifa oxirida 
