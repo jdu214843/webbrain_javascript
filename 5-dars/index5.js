@@ -48,7 +48,7 @@
 // !! hoisting degani variable mi yoki function mi doim tepaga olib chiqib declear qilish deyiladi.
  
 // callback function nima?
-// ??  
+
 
 
 
