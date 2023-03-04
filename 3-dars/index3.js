@@ -1,6 +1,6 @@
 
 
-// !! if va else bo'yicha mustahkamlash uchun masalalar
+// !! if va else bo'yicha masalalar
 
 
 
