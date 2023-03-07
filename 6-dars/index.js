@@ -53,8 +53,23 @@
 // console.log(dec2)
 // dec1.name = "aisle"
 
+// let description = {
+//     name : "asilbek",
+//     familya : "Boysoatov",
+//     qayerdan : "Surxondaryo",
+//     yoshi : 20,
+//     "full name" :  "Boysoatov Asilbek",
+//     0: 34856783
+// }
 
+// for(let i in description){
+//     console.log(i)
+// }
+// Object.freeze(description);
 
-
+// description.name = "Saidamin";
+// delete description.name
+// description.founded = 2022
+// console.log(description)
 
 
