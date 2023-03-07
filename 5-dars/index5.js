@@ -11,7 +11,7 @@
 //     a--;
 // }
 
-// do{ // !! do whileda birinchi do bajariladi keyin while shartiniga o'tadi
+// do{ // !! do whileda birinchi do bajariladi keyin while shartiniga o'tadi.
 //     console.log(a);
 //     a--;
 // }while(a == 0){
