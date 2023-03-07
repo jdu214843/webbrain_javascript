@@ -49,7 +49,7 @@ getAvr()
  
 // callback function nima?
 
-
+// functionlarni ichida parametr sifatida boshqa bir function ulash.
 
 
 
@@ -71,6 +71,8 @@ getAvr()
 // !! hoxlagan ma'lumotni return qilsak bo'ladi
 // ?? nima return qilsh kerak. shunaqa functionlar borki ularni boshqa bir maqsadda ishlatish mumkin.
 // ?? ya'na bir xil functionlar ham ular faqat bir xil functiya bajaradi bizga faqat natijasi kerak bo'ladi.
+// ?? return qilishdan maqsad. agar return qilsak bu function ustida boshqa bir amal bajarsa bo'ladi.
+// ?? agar return qilmasak: agar return qilmasak undefiend natija chiqadi.s
 
 // const gpa = (a=0,b=0,c=0,d=0) => {
 //     let res = (a + b + c +d) / 4
@@ -104,7 +106,7 @@ getAvr()
 // !! clean code nima?
 
 // ?? clean code - bu functionga mos qilib nomlash masalan gpa() bo'lsa buni getGpa deb nomalash clean code bo'ladi.
-//  klit so'zlari
+//  kalit so'zlari
 // get , calc , create , check , 
 // camel case katta kichik harf bilan yozish:
 
