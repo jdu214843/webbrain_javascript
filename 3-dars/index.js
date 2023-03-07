@@ -6,7 +6,7 @@
 //     alert('Hello')
 // }
 
-// 2 - masala :
+// 2 - masala:
 
 // let brand = 'ECMAScrip';
 
