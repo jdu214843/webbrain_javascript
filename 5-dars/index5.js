@@ -152,13 +152,21 @@ getAvr()
 // min(a,b)
 
 // masala
-let a = 372677;
-let c = 0;
-let b = 0;
-while(a > 0){
-    c = c + a % 10;
-    b = a % 10;
-    a = (a - b) / 10;
-    b = 0;
+// let a = 372677;
+// let c = 0;
+// let b = 0;
+// while(a > 0){
+//     c = c + a % 10;
+//     b = a % 10;
+//     a = (a - b) / 10;
+//     b = 0;
+// }
+// console.log(c);
+
+// 4-masala
+
+function pow(a,b){
+    console.log(a ** b)
 }
-console.log(c);
+pow(1, 5)
+pow(2, 5)
