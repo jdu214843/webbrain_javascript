@@ -36,11 +36,11 @@
 
 // getAvr()
 
-// const getAvr = function(){
-//     console.log('Asilbek, Welcome to Webbrain');
+const getAvr = function(){
+        console.log('Asilbek, Welcome to Webbrain');
     
-// }
-// getAvr()
+}
+getAvr()
 
 // ?? agar functionni expretion ko'rinishida yozib va funsiyani tepada chaqirilsa
 // ?? error beradi.agar pasda chaqirilsa ishlaydi

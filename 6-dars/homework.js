@@ -37,11 +37,10 @@ const dec1 = {
 // !! 3-masala
 
 // object valuelarining raqamga tenglarini toping
-let obj={
-    id:1,
-    name:"WebBrain"
-}
-
+// let obj={
+//     id:1,
+//     name:"WebBrain"
+// }
 // chiqish
 // id
 
