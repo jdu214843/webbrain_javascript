@@ -165,8 +165,8 @@ getAvr()
 
 // 4-masala
 
-function pow(a,b){
-    console.log(a ** b)
-}
-pow(1, 5)
-pow(2, 5)
+// function pow(a,b){
+//     console.log(a ** b)
+// }
+// pow(1, 5)
+// pow(2, 5)
