@@ -61,22 +61,33 @@
 
 // let salaries = {
 //     John : 100,
-//     Pete: 130,
+//     Pete: 180,
 //     Ann : 150,
 // };
-
+// let sum = 0;
 // for(let a in salaries){
-//     console.log(salaries[a])
+//     sum += salaries[a]
 // }
-// console.log(salaries);
+// console.log(sum)
 
 
-// 6-masala
+// !! 6-masala
 
 let menu = {
     width: 200,
     height: 300,
     title:"My menu",
+}
+for(let i in menu){
+    if(typeof menu[i] == "number"){
+        menu[i] *= 2
+    }
+}
+display(menu)
+function display(menu){
+    for(const i in menu){
+        console.log(menu[i]);
+    }
 }
 
 

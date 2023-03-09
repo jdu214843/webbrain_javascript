@@ -1,3 +1,6 @@
+// ?? Objects 2
+
+
 // let obj = {
 //     name : "webbrain",
 //     age: 23,
@@ -102,4 +105,9 @@
 
 
 // ?? sprate yoyib yuborish . sparate operatori bu - ikkita obyekt ichidan ma'lumotni gulli qavusdan tashqariga
-// chiqarib olish. sparet {...obj nomi} ichida yozidaladi. bu copy qilib olish ham desa bo'ladi
+// chiqarib olish. sprate {...obj nomi} ichida yozidaladi. bu copy qilib olish ham desa bo'ladi
+
+
+
+
+
