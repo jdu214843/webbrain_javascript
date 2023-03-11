@@ -92,19 +92,51 @@
 //        agename : 2022,
 //     }
 // }
-// !! ditraction - qilish obyektlarni ichiga kirish. ya'ni
-// nomlar bir xil bo'lib qolganda yoki obyektni ichidagi obyektlar ham bir xil bo'lib qolganda 
-// ishlatiladi . distraction ko'p hollar kerak bo'ladi.
 
-// let {name, title, child:{agename: test}} = obj
-// console.log(test);
-// console.log(obj.name);
-// for(value in obj){
-//     console.log(obj['value']);
+
+
+
+
+/*object ichida objectlar berilgan. ichki objectlarning ichiga age degan key berilgan. barcha ichki keylardagi age lar yigindisini toping*/
+
+// let person = {
+//     id: 1,
+//     name: 'Odil',
+//     age:78,
+//     child: {
+//         id: 1,
+//         name: 'Ali',
+//         age:48,
+//         child: {
+//             id: 1,
+//             name: 'Umar',
+//             age:20
+//         }
+//     }
 // }
 
+// function sumOfObj(obj){
+//     if (obj.child !== undefined) return obj.age + sumOfObj(obj.child)
+//     return obj.age;
+// }
+// console.log(sumOfObj(person))
+// let sum = 0;
+// while(person){
+//     sum += person.age;
+//     person = person.child
+// }
 
-// ?? seperate yoyib yuborish . sparate operatori bu - ikkita obyekt ichidan ma'lumotni gulli qavusdan tashqariga
-// chiqarib olish. sprate {...obj nomi} ichida yozidaladi. bu copy qilib olish ham desa bo'ladi
+// console.log(sum);
 
 
+
+function getName(){
+    console.log(new.target)
+//     this.name = "webbrain";
+//     this.sayHi = function (){
+//         console.log(this)
+//         return this;
+//     }
+}
+new getName("eshmat")
+// console.log((new getName().sayHi())); 
