@@ -83,12 +83,12 @@ for(let i in menu){
         menu[i] *= 2
     }
 }
-display(menu)
 function display(menu){
     for(const i in menu){
         console.log(menu[i]);
     }
 }
+display(menu)
 
 
 

@@ -104,10 +104,7 @@
 // }
 
 
-// ?? sprate yoyib yuborish . sparate operatori bu - ikkita obyekt ichidan ma'lumotni gulli qavusdan tashqariga
+// ?? seperate yoyib yuborish . sparate operatori bu - ikkita obyekt ichidan ma'lumotni gulli qavusdan tashqariga
 // chiqarib olish. sprate {...obj nomi} ichida yozidaladi. bu copy qilib olish ham desa bo'ladi
-
-
-
 
 
