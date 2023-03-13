@@ -115,7 +115,7 @@ let user = {
 function getAges(object) {
     function sumOfObj(object, array = []) {
         let ages = array;
-        ages.push(object.name);
+        ages.push(object.age);
         if (object.children !== undefined) {
             for (let person of object.children) {
                 ages = sumOfObj(person,  ages);
