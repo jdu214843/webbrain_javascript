@@ -39,7 +39,7 @@
 // !! ###############################
 
 // agar 
-// console.log(+'1_000' + 1)// agar begli aralashib qolsa NaN beradi.
+// console.log(+'1_000' + 1)// agar belgi aralashib qolsa NaN beradi.
 // console.log(+'1000' + 1)// bu holatda ishlaydi.
 
 // let num = 7;
@@ -58,14 +58,14 @@
 
 // !! Object.is 2 ta stringni bir biriga taqqoslab beradi.
 
-// let res = Object.is("web" , "web")
+// let res = Object.is("webs" , "web")
 // console.log(res);
 
 
-// let num = 000000032534;
-// let num1 = 000000032534;
+// let num = 232;
+// let num1 = 242;
 // console.log(num1.toPrecision(3))
-// console.log(num.toPrecision(4)) raqamni nechta son borligini ifodalaganda ishlatiladi.
+// console.log(num.toPrecision(4)) // raqamni nechta son borligini ifodalaganda ishlatiladi.
 
 
 // !! Math - bu javascriptda amallarni bajarishda yordam beradigan qo'shimcha metod
@@ -76,16 +76,22 @@
 // console.log(Math.ceil(1.2)) // kasr qismini yuqoriga qarab yahlitlaydi
 // console.log(Math.round(2.5)) // qiymatni yahlitlaydi. bu kasr qismini 5 yoki undan yuqoriligiga nisbatdan yahlitlaydi.
 // console.log(Math.trunc(-10.99)) // bu doim kasr qismi nima bo'lishidan qatiy nazar o'chirib yuboradi.floor esa butun qismiga nisbatada kasr qismini pastga qarab yahlitlaydi
-// console.log(Math.trunc(Math.random() * 100)) // bu sonlarni random qilib tasodifiy chiqaradi
+console.log(Math.trunc(Math.random() *100)) // bu sonlarni random qilib tasodifiy chiqaradi
 // console.log(Math.min(1,2 ,0, 45)) // bu eng kichikini topadi
 // console.log(Math.max(...[1,2 ,0, 45])) // sonlarni eng kattasini topadi
 // console.log(Math.pow(4, 2)) // bu sonlarni darajaga ko'taradi.
 // console.log(Math.sqrt(9))// bu sonlarni ildiz ositdan chiqaradi
 // console.log(Math.cbrt(9))//
 // console.log(Math.sqrt(9))// 
-// console.log(Math.sqrt(9))// 
+// console.log(Math.sqrt(9))//
 
+function getRandom(min = 100, max = 1000) {
+    return Math.random() * (max - min);
+  }
+console.log(getRandom())
 
 // !! Homework
 
-let num = [1,2,5,23,45,8,4];
+// let num = [1,2,5,23,45,8,4];
+
+
