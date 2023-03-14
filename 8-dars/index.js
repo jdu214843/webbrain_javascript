@@ -76,7 +76,7 @@
 // console.log(Math.ceil(1.2)) // kasr qismini yuqoriga qarab yahlitlaydi
 // console.log(Math.round(2.5)) // qiymatni yahlitlaydi. bu kasr qismini 5 yoki undan yuqoriligiga nisbatdan yahlitlaydi.
 // console.log(Math.trunc(-10.99)) // bu doim kasr qismi nima bo'lishidan qatiy nazar o'chirib yuboradi.floor esa butun qismiga nisbatada kasr qismini pastga qarab yahlitlaydi
-console.log(Math.trunc(Math.random() *100)) // bu sonlarni random qilib tasodifiy chiqaradi
+// console.log(Math.trunc(Math.random() *100)) // bu sonlarni random qilib tasodifiy chiqaradi
 // console.log(Math.min(1,2 ,0, 45)) // bu eng kichikini topadi
 // console.log(Math.max(...[1,2 ,0, 45])) // sonlarni eng kattasini topadi
 // console.log(Math.pow(4, 2)) // bu sonlarni darajaga ko'taradi.
@@ -85,13 +85,12 @@ console.log(Math.trunc(Math.random() *100)) // bu sonlarni random qilib tasodifi
 // console.log(Math.sqrt(9))// 
 // console.log(Math.sqrt(9))//
 
-function getRandom(min = 100, max = 1000) {
+function randomIntiger(min = 1, max = 50) {
     return Math.random() * (max - min);
   }
-console.log(getRandom())
+console.log(parseInt(randomIntiger()))
 
-// !! Homework
+// !! Homeworkclear
 
 // let num = [1,2,5,23,45,8,4];
-
 
