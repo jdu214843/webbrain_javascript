@@ -86,9 +86,9 @@
 // console.log(Math.sqrt(9))//
 
 function randomIntiger(min = 1, max = 50) {
-    return Math.random() * (max - min);
+    return Math.trunc(Math.random() * (max - min));
   }
-console.log(parseInt(randomIntiger()))
+console.log(randomIntiger())
 
 // !! Homeworkclear
 
