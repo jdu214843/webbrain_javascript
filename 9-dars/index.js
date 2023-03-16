@@ -18,12 +18,43 @@
 
 // ?? 1 -masala
 
-// let str1 = "webBrain academy"
-// let str2 = "webBrain academy"
-// check = (a,b) =>{
-//     console.log(a.localeCompare(b))
+// let str1 = "webbrain academy"
+// let str2 = ""
+// let res = str1.localeCompare(str2)
+// function check (res){
+//     if(res < 0){
+//         console.log("mutlaqo teng emas")
+//     }else if(res > 0){
+//         console.log("qisman o'xshash")
+//     }else{
+//         console.log("ikkisi teng")
+//     }
 // }
-// check(str1, str2)
+// check(res)
+
+let str1 = "webbrain academy"
+let str2 = "feafa"
+let res = str1.localeCompare(str2)
+
+    if(res < 0){
+        console.log("mutlaqo teng emas")
+    }else if(res > 0){
+        console.log("qisman o'xshash")
+    }else{
+        console.log("ikkisi teng")
+    }
+
+var oStringObject1 = new String("brick");
+var oStringObject2 = new String("");
+var iResult = oStringObject1.localeCompare(oStringObject2);
+
+if(iResult < 0) {
+    console.log("teng emas");
+} else if (iResult > 0) {
+    console.log("qisman");
+} else {
+    console.log("The two strings are equal");
+}
 
 // !! 2-masala
 
