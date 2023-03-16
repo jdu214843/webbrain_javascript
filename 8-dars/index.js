@@ -23,12 +23,12 @@
 // let num = 0.1 + 0.2
 // agar variable bn kelsa number shartmas
 // bunday holatda + ishorasidan foydalansa bo'ladi. stringni numberga o'ykazadi
-// console.log(Number(0.1 + 0.2).toFixed(2))// bunda 0.30 chiqadi
+// console.log(Number(0.1 + 0.2).toFixed(10))// bunda 0.30 chiqadi
 
 // float bn numberni farqi - number birinchi ko'rgan raqamni oladi undan keyin raqam bo'lmagan bironta belgi ko'rsa NaN beradi.
 // float esa raqamgacha bo'lgan qismini olib qolganini tashab yuboradi.
 // bu NaN bo'ladi
-// let num = "1.3 + 2.3"
+// let num = "13 + 2.3"
 // console.log(Number(num))
 // console.log(parseFloat(num))
 
@@ -64,8 +64,8 @@
 
 // let num = 232;
 // let num1 = 242;
-// console.log(num1.toPrecision(3))
 // console.log(num.toPrecision(4)) // raqamni nechta son borligini ifodalaganda ishlatiladi.
+// console.log(num1.toPrecision(5))
 
 
 // !! Math - bu javascriptda amallarni bajarishda yordam beradigan qo'shimcha metod
@@ -85,12 +85,21 @@
 // console.log(Math.sqrt(9))// 
 // console.log(Math.sqrt(9))//
 
-function randomIntiger(min = 1, max = 50) {
-    return Math.trunc(Math.random() * (max - min));
-  }
-console.log(randomIntiger())
+// function randomIntiger(min = 1, max = 50) {
+//     return Math.trunc(Math.random() * (max - min));
+//   }
+// console.log(randomIntiger())
 
 // !! Homeworkclear
 
 // let num = [1,2,5,23,45,8,4];
 
+// for(let a = 1; a <= 100; a++){
+//     if(a % 3 == 0 && a % 5 == 0 && a % 15 == 0){
+//         console.log(a)
+//     }
+   
+// }
+
+
+// 
