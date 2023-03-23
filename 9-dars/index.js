@@ -121,14 +121,14 @@
 // getDubl("webbrain")
 
 
-// let res = "10010001011111001"
+// let res = "10110110010111110"
 // let count = 0;
 // let s = 0;
 // for(i of res){
 //     if(i == 1){
 //         count++
-//     }else{
 //         count > s && (s = count)
+//     }else{
 //         count = 0
 //     }
 // }
