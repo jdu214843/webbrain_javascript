@@ -84,6 +84,23 @@ let users = [
   {id: 7, year: 2018, engine: 2.4, name: "Tracker"},
 ];
 
+
+
+let result = users.map((v)=>{
+  if(v.year < 2000){
+    console.log(Object.assign(v,{status:"eski"}))
+  }else if(v.year > 2000 && v.year <= 2010){
+    console.log(Object.assign(v,{status:"o'rta"}))
+  }else{
+    console.log(Object.assign(v,{status:"yangi"}))
+  }
+  console.log(users)
+})
+
+
+// console.log(arrOfObj);
+// console.log(result);
+
 // const newStatus = users.map(v => {
 //   return v.value > 2000 ? {...v, status: "eski"} : v 
 // })
@@ -122,8 +139,8 @@ let users = [
 // ?? engine kuchiga qarab malumotlarni sartiforfka qiling
 // ?? chigarilgan yiliga garab malumotlarni sartiforfka qiling
 // ?? isimlarini Albhabet tarzda sartiforfka qiling
-// !!2000 yildan oldin chiggan mashinalarga status: eski malumot go' shi
-// !!2000~2010 yilda chiggan mashinalarga status: o'rta malumot qo' shind
-// !!2010~2022 yildan oldin chiggan mashinalarga status: yangi malumot
+// !!2000 yildan oldin chiggan mashinalarga status: "eski" malumot go' shing
+// !!2000~2010 yilda chiggan mashinalarga status: "o'rta" malumot qo' shing
+// !!2010~2022 yildan oldin chiggan mashinalarga status: "yangi" malumot
 
 
