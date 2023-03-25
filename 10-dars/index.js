@@ -94,7 +94,6 @@ let result = users.map((v)=>{
   }else{
     console.log(Object.assign(v,{status:"yangi"}))
   }
-
 })
 console.log(users)
 
