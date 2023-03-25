@@ -86,16 +86,16 @@ let users = [
 
 
 
-let result = users.map((v)=>{
-  if(v.year < 2000){
-    return (Object.assign(v,{status:"eski"}))
-  }else if(v.year > 2000 && v.year < 2010){
-    return (Object.assign(v,{status:"o'rta"}))
-  }else if(v.year > 2010 && v.year < 2022){
-    return(Object.assign(v,{status:"yangi"}))
-  }
-})
-console.log(users)
+// let result = users.map((v)=>{
+//   if(v.year < 2000){
+//     return (Object.assign(v,{status:"eski"}))
+//   }else if(v.year > 2000 && v.year < 2010){
+//     return (Object.assign(v,{status:"o'rta"}))
+//   }else if(v.year > 2010 && v.year < 2022){
+//     return(Object.assign(v,{status:"yangi"}))
+//   }
+// })
+// console.log(users)
 
 
 // console.log(arrOfObj);
@@ -106,28 +106,34 @@ console.log(users)
 // })
 // console.log(newStatus)
 // console.log(users)
-// let res = users.filter((value,index) => {
+
+// const getData = (users) =>{
+//   let res = users.filter((value,index) => {
 //    return value.year < 2000
-// })
-// console.log(res)
+//   })
+//   console.log(res)
+// }
+// getData(users)
+
+
 
 // -------------------------------
 
-// let resSort = users.sort((a,b) => {
+// const getSort= (users) =>{
+//   let resSort = users.sort((a,b) => {
 //     return a.engine - b.engine
 // })
-
-// let resSort = users.sort((a,b) => {
-//   return a.year - b.year
-// })
 // console.log(resSort)
-
-// const Sort = ()=>{
-//   let resSort = users.sort((a,b) => a.name.localeCompare(b.name))
-//   console.log(resSort)
 // }
-// Sort()
-// console.log(resSort)
+// getSort(users)
+
+
+
+const getAlphaSort = ()=>{
+  let resSort = users.sort((a,b) => a.name.localeCompare(b.name))
+  console.log(resSort)
+}
+getAlphaSort()
 
 
 
