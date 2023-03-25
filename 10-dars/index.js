@@ -88,11 +88,11 @@ let users = [
 
 let result = users.map((v)=>{
   if(v.year < 2000){
-    console.log(Object.assign(v,{status:"eski"}))
+    return (Object.assign(v,{status:"eski"}))
   }else if(v.year > 2000 && v.year <= 2010){
-    console.log(Object.assign(v,{status:"o'rta"}))
+    return (Object.assign(v,{status:"o'rta"}))
   }else{
-    console.log(Object.assign(v,{status:"yangi"}))
+    return(Object.assign(v,{status:"yangi"}))
   }
 })
 console.log(users)
