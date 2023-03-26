@@ -25,4 +25,24 @@
 // });
 // console.log(res)
 
+// !! ------
+
+let str = "Webbrain Academy";
+
+const getIcon = (string)=>{
+    let res = ``
+    let largeText = 0;
+    let lowerText = 0;
+    for(value of string){
+        // console.log(value)
+        if(value === value.toUpperCase() && value !== ' '){
+           largeText += value.length
+        }else if (value === value.toLowerCase() && value !== ' '){
+            lowerText += value.length
+        }
+    }
+    console.log(res = `Katta harflar soni: ${largeText} ta: kichik harflar soni ${lowerText} ta:`)
+}
+getIcon(str)
+
 

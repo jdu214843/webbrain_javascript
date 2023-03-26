@@ -107,25 +107,25 @@ let users = [
 // console.log(newStatus)
 // console.log(users)
 
-// const getData = (users) =>{
-//   let res = users.filter((value,index) => {
-//    return value.year < 2000
-//   })
-//   console.log(res)
-// }
-// getData(users)
+const getData = (users) =>{
+  let res = users.filter((value,index) => {
+   return value.year < 2000
+  })
+  console.log(res)
+}
+getData(users)
 
 
 
 // -------------------------------
 
-// const getSort= (users) =>{
-//   let resSort = users.sort((a,b) => {
-//     return a.engine - b.engine
-// })
-// console.log(resSort)
-// }
-// getSort(users)
+const getSort= (users) =>{
+  let resSort = users.sort((a,b) => {
+    return a.engine - b.engine
+})
+console.log(resSort)
+}
+getSort(users)
 
 
 
