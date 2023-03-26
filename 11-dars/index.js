@@ -27,22 +27,43 @@
 
 // !! ------
 
-let str = "Webbrain Academy";
+// let str = "Webbrain Academy";
 
-const getIcon = (string)=>{
-    let res = ``
-    let largeText = 0;
-    let lowerText = 0;
-    for(value of string){
-        // console.log(value)
-        if(value === value.toUpperCase() && value !== ' '){
-           largeText += value.length
-        }else if (value === value.toLowerCase() && value !== ' '){
-            lowerText += value.length
-        }
+// const getText = (string)=>{
+//     let res = ``
+//     let largeText = 0;
+//     let lowerText = 0;
+//     for(value of string){
+//         if(value === value.toUpperCase() && value !== ' '){
+//            largeText += value.length
+//         }else if (value === value.toLowerCase() && value !== ' '){
+//             lowerText += value.length
+//         }
+//     }
+//     console.log(res = `Katta harflar soni: ${largeText} ta: kichik harflar soni ${lowerText} ta:`)
+// }
+// getText(str)
+
+
+// let str1 = "webbr@in ac@demy"
+
+// const getIcon = (text)=>{
+//     let res = ''
+//     for(value of text){
+//         if(value === "@") {value = 'a'}
+//         console.log(value)
+//     }
+// }
+
+// getIcon(str1)
+
+
+let str = "weeebbbbrrraaaiiinnn"
+let getDubl = (str2) =>{
+    for(key in str2){
+        // console.log(key)
     }
-    console.log(res = `Katta harflar soni: ${largeText} ta: kichik harflar soni ${lowerText} ta:`)
 }
-getIcon(str)
 
+getDubl(str)
 
