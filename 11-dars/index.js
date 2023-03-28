@@ -67,21 +67,132 @@
 
 // getDubl(str)
 
-// sonlarning o'rta arifmetigini topish
+// !! object bo'yicha masala
 
-function test(A, S) {
-    let count = 0;
-    let n = 0;
-    while (n < A.length) {
-      for(let i=n;i<=A.length;i++){
-          let fragment=A.slice(n,i)
-          if(fragment.length){
-              eval(`(${fragment.join("+")})/${fragment.length}`)===S?count++:null;
-          }
-      }
-      n++;
-    }
-    return count;
-  }
-  console.log(test([0, 4, 3, -1], 2));
+// Object ichidagi Boolean tipidagi malumotlarni chiqaring keylari bilan birga?
+
+// let obj3 = {
+//     id: 1,
+//     name: "webbrain",
+//     offline: true,
+//     online: true,
+//     individual: false,
+//   };
+  
+//   const getBoolean = (obj) => {
+//     let res = ``;
+//     for (key in obj) {
+//       if (typeof obj[key] === "boolean") res += ` ${key} : ${obj[key]}`; ;
+//     }
+//     return res;
+//   };
+//   console.log(getBoolean(obj3));
+
+  // 2 - Masala:
+// Ojbect ichidagi agelar yigindisini toping ?
+
+// let obj2 = {
+//     title: "Webbrain",
+//     age: 2,
+//     child: {
+//       age: 44,
+//       name: "Webbrain",
+//       child: {
+//         age: 23,
+//       },
+//     },
+//   };
+//   const getObjAge = (obj) => {
+//     let res = 0;
+//     while (obj2) {
+//       res += obj2.age;
+//       obj2 = obj2.child;
+//     }
+//     return res;
+// };
+//  console.log(getObjAge(obj2));
+  
+  
+
+// !! sonlarning o'rta arifmetigini topish
+
+// function test(A, S) {
+//     let count = 0;
+//     let n = 0;
+//     while (n < A.length) {
+//       for(let i=n;i<=A.length;i++){
+//           let fragment=A.slice(n,i)
+//           if(fragment.length){
+//               eval(`(${fragment.join("+")})/${fragment.length}`)===S?count++:null;
+//           }
+//       }
+//       n++;
+//     }
+//     return count;
+//   }
+//   console.log(test([0, 4, 3, -1], 2));
+
+
+// !! string masalalar
+
+
+
+// !! 6 - masala:
+// Berilgan soz palendrom yoki palendrom emasligini aniqlang ?
+// let str6 = "kiyik";
+
+// const getPolendrom = (str) => {
+//   let polindrom = str.split("").reverse().join("");
+//   return polindrom === str;
+// };
+// console.log(getPolendrom(str6))
+
+// !! 8 - Masala:
+// Stringda qatnashgan belgilar sanogini toping ?
+
+// let str8 = "webbrain academy";
+
+// const getCharNum = (str) => {
+//   let res = {};
+//   for (value of str) {
+//     if(res[value]) res[value]++
+//     else  (res[value] = 1);
+//     }
+//   return res;
+// };
+
+// console.log(getCharNum(str8));
+
+
+
+
+
+
+
+// !! 9 - Masala:
+// Stringni ziplang?
+
+// let str9 = "webbraaain Accaaademyyyy";
+
+// const strZip = (str) => {
+//   let res = "";
+//   let count = 1;
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === str[i + 1]) count++;
+//     else {
+//       res += str[i];
+//       if (count > 1) {
+//           res += count;
+//           console.log(res)
+//         count = 1;
+//       }
+//     }
+//   }
+
+//   return res;
+// };
+// console.log(strZip(str9));
+
+
 
