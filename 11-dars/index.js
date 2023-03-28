@@ -58,12 +58,30 @@
 // getIcon(str1)
 
 
-let str = "weeebbbbrrraaaiiinnn"
-let getDubl = (str2) =>{
-    for(key in str2){
-        // console.log(key)
-    }
-}
+// let str = "weeebbbbrrraaaiiinnn"
+// let getDubl = (str2) =>{
+//     for(key in str2){
+//         // console.log(key)
+//     }
+// }
 
-getDubl(str)
+// getDubl(str)
+
+// sonlarning o'rta arifmetigini topish
+
+function test(A, S) {
+    let count = 0;
+    let n = 0;
+    while (n < A.length) {
+      for(let i=n;i<=A.length;i++){
+          let fragment=A.slice(n,i)
+          if(fragment.length){
+              eval(`(${fragment.join("+")})/${fragment.length}`)===S?count++:null;
+          }
+      }
+      n++;
+    }
+    return count;
+  }
+  console.log(test([0, 4, 3, -1], 2));
 
