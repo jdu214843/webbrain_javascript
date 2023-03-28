@@ -135,6 +135,54 @@
 
 // !! string masalalar
 
+// 3 - Masala:
+// Dublicate bolgan harflarni ochiring ?
+
+let str3 = "weeebbbbbbbrrrrraaaiiiiinn";
+
+const getDoubleCate = (str) => {
+  let res = "";
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i + 1] === str[i]);
+    else res += str[i];
+  }
+
+  return res;
+};
+console.log(getDoubleCate(str3));
+
+
+// !! 4 -masala
+// string ichidagi raqamlarni aniqlang
+
+// let num = "we2bbrain44 aca3demy"
+// const getNum = (str)=>{
+//     let res = ""
+//     for(i of str){
+//         if(Number(i)){
+//             res += i
+//         }
+//     }
+//     return +res
+// }
+// console.log(getNum(num))
+
+// !! 5 - Masala:
+// String berilgan stringning har bir belgisini 2marta takrorlang ?
+
+// let str5 = "Webbrain";
+
+// const getDoubleStr = (str) => {
+//   let res = "";
+//   for (value of str) {
+//     res += value + value;
+    
+//   }
+
+//   return res;
+// };
+// console.log(getDoubleStr(str5));
 
 
 // !! 6 - masala:
