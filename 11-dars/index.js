@@ -27,46 +27,6 @@
 
 // !! ------
 
-// let str = "Webbrain Academy";
-
-// const getText = (string)=>{
-//     let res = ``
-//     let largeText = 0;
-//     let lowerText = 0;
-//     for(value of string){
-//         if(value === value.toUpperCase() && value !== ' '){
-//            largeText += value.length
-//         }else if (value === value.toLowerCase() && value !== ' '){
-//             lowerText += value.length
-//         }
-//     }
-//     console.log(res = `Katta harflar soni: ${largeText} ta: kichik harflar soni ${lowerText} ta:`)
-// }
-// getText(str)
-
-
-// let str1 = "webbr@in ac@demy"
-
-// const getIcon = (text)=>{
-//     let res = ''
-//     for(value of text){
-//         if(value === "@") {value = 'a'}
-//         console.log(value)
-//     }
-// }
-
-// getIcon(str1)
-
-
-// let str = "weeebbbbrrraaaiiinnn"
-// let getDubl = (str2) =>{
-//     for(key in str2){
-//         // console.log(key)
-//     }
-// }
-
-// getDubl(str)
-
 // !! object bo'yicha masala
 
 // Object ichidagi Boolean tipidagi malumotlarni chiqaring keylari bilan birga?
@@ -134,23 +94,56 @@
 
 
 // !! string masalalar
+// !! masala
 
-// 3 - Masala:
+// let str = "Webbrain Academy";
+
+// const getText = (string)=>{
+//     let res = ``
+//     let largeText = 0;
+//     let lowerText = 0;
+//     for(value of string){
+//         if(value === value.toUpperCase() && value !== ' '){
+//            largeText += value.length
+//         }else if (value === value.toLowerCase() && value !== ' '){
+//             lowerText += value.length
+//         }
+//     }
+//     console.log(res = `Katta harflar soni: ${largeText} ta: kichik harflar soni ${lowerText} ta:`)
+// }
+// getText(str)
+
+// !! 2 - Masala:
+// Berilgan stringdagi @ chani a harfiga o'zgartiring ?
+// let str1 = "webbr@in ac@demy"
+
+// const getIcon = (text)=>{
+//     let res = ''
+//     for(value of text){
+//         if(value === "@") {value = 'a'}
+//         else res += value;
+//     }
+//     return res
+// }
+
+// console.log(getIcon(str1))
+
+// !! 3 - Masala:
 // Dublicate bolgan harflarni ochiring ?
 
-let str3 = "weeebbbbbbbrrrrraaaiiiiinn";
+// let str3 = "weeebbbbbbbrrrrraaaiiiiinn";
 
-const getDoubleCate = (str) => {
-  let res = "";
+// const getDoubleCate = (str) => {
+//   let res = "";
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i + 1] === str[i]);
-    else res += str[i];
-  }
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i + 1] === str[i]);
+//     else res += str[i];
+//   }
 
-  return res;
-};
-console.log(getDoubleCate(str3));
+//   return res;
+// };
+// console.log(getDoubleCate(str3));
 
 
 // !! 4 -masala
@@ -211,12 +204,6 @@ console.log(getDoubleCate(str3));
 
 // console.log(getCharNum(str8));
 
-
-
-
-
-
-
 // !! 9 - Masala:
 // Stringni ziplang?
 
@@ -241,6 +228,11 @@ console.log(getDoubleCate(str3));
 //   return res;
 // };
 // console.log(strZip(str9));
+
+
+// !! array masalalar 
+
+
 
 
 
