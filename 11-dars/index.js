@@ -38,7 +38,7 @@
 //     online: true,
 //     individual: false,
 //   };
-  
+
 //   const getBoolean = (obj) => {
 //     let res = ``;
 //     for (key in obj) {
@@ -48,7 +48,7 @@
 //   };
 //   console.log(getBoolean(obj3));
 
-  // 2 - Masala:
+// 2 - Masala:
 // Ojbect ichidagi agelar yigindisini toping ?
 
 // let obj2 = {
@@ -71,8 +71,6 @@
 //     return res;
 // };
 //  console.log(getObjAge(obj2));
-  
-  
 
 // !! sonlarning o'rta arifmetigini topish
 
@@ -91,7 +89,6 @@
 //     return count;
 //   }
 //   console.log(test([0, 4, 3, -1], 2));
-
 
 // !! string masalalar
 // !! masala
@@ -145,7 +142,6 @@
 // };
 // console.log(getDoubleCate(str3));
 
-
 // !! 4 -masala
 // string ichidagi raqamlarni aniqlang
 
@@ -170,13 +166,12 @@
 //   let res = "";
 //   for (value of str) {
 //     res += value + value;
-    
+
 //   }
 
 //   return res;
 // };
 // console.log(getDoubleStr(str5));
-
 
 // !! 6 - masala:
 // Berilgan soz palendrom yoki palendrom emasligini aniqlang ?
@@ -187,6 +182,27 @@
 //   return polindrom === str;
 // };
 // console.log(getPolendrom(str6))
+
+// !! 7 - masala
+// Berilgan stringdagi harflar soni bir biriga teng yoki teng emasligini aniqlang. Tartib muhim emas.
+
+// let str7a = "web";
+// let str7b = "ewb";
+
+// const getAmount = (str1, str2) => {
+//   let a = str1
+//     .split("")
+//     .sort((a, b) => a.localeCompare(b))
+//     .join("");
+
+//   let b = str2
+//     .split("")
+//     .sort((a, b) => a.localeCompare(b))
+//     .join("");
+
+//   return a === b;
+// };
+// console.log(getAmount(str7a, str7b));
 
 // !! 8 - Masala:
 // Stringda qatnashgan belgilar sanogini toping ?
@@ -224,15 +240,98 @@
 //       }
 //     }
 //   }
-
 //   return res;
 // };
 // console.log(strZip(str9));
 
+// !! array masalalar
 
-// !! array masalalar 
+// !! Binary masala
 
+// let res = 5766;
+// let count = 0;
+// let r = 0;
+// let isStartCount = false;
 
+// const getBinary = (res1) => {
+//   s = res1.toString(2);
+//   for (char of s) {
+//     if (char == "1") {
+//       r = count > r ? count : r;
+//       count = 0;
+//       isStartCount = true;
+//     } else if (isStartCount) {
+//       count++;
+//     }
+//   }
+//   console.log(`nol: ${r}`);
+// };
+// getBinary(res);
 
+// ----------------------- Array Boyicha Masalalar:
 
+// 1 - Masala:
+//Array ichidagi doublikat sonlarni chiqarib yuboring? new Setsiz!
 
+// let arr1 = [2, 2, 2, 2, 4, 4, 4, 5, 6, 7];
+
+// const getDoublicateArr = (arr) => {
+//   let res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== arr[i + 1]) res.push(arr[i]);
+//   }
+//   return res;
+// };
+// console.log(getDoublicateArr(arr1));
+
+// !! 2 - Masala:
+// Arraylarni bir-biriga taqqoslang?
+
+// let arr2 = [1, 2, 3];
+// let arr3 = [1, 2, 3];
+
+// const getComporasionArr = (arr1, arr2) => {
+//   let oneArr = arr1.join("");
+//   let twoArr = arr2.join("");
+
+//   return oneArr === twoArr;
+// };
+// console.log(getComporasionArr(arr2, arr3));
+// 3 - Masala:
+// Array ichidagi ikki honali sonlarni chiqaring ?
+
+// let arr4 = [1, 65, 4, 67, 567];
+
+// const getTwoRoom = (arr) => {
+//   let res = [];
+//   let strArr = arr.join(" ").split(" ");
+
+//   for (value of strArr) {
+//     if (value.length === 2) res.push(+value);
+//   }
+//   return res;
+// };
+// console.log(getTwoRoom(arr4));
+
+// -------------------------- Advenced Homeworks:
+// [2,3,2,4,5,2,3]
+// [2,3,2,1,2,3]
+// [2,2,1,2]
+// [1,2]
+// [1]
+// Berilgan Array shu korinishda chiqishi kerak ?
+
+let arr5 = [2, 3, 2, 4, 5, 2, 3];
+
+const arrTwoMax = (arr) => {
+  for (value of arr) {
+    let sortArr = arr.sort((a, b) => a - b);
+    let max = sortArr.pop() - sortArr.pop();
+
+    sortArr.push(max);
+
+    let total = sortArr.filter((value) => value);
+    console.log(total);
+  }
+};
+// arrTwoMax(arr5);
