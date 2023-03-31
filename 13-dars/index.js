@@ -1,11 +1,11 @@
-// !! data set, setmap, map
+// !! data() set(), get()
 
 let now = new Date();
 let hours = now.getHours();
 let minut = now.getMinutes();
 let year = now.getFullYear();
 let localDay = now.getDay();
-let month = now.getMonth();
+let month = now.getMonth() + 1;
 let day = now.getDate();
 let getLocalTime = hours >= 12 ? "PM" : "AM";
 let dayNames = ["Yak", "Dush", "Sesh", "Chor", "Pay", "Juma", "Shan"];
@@ -48,7 +48,7 @@ const getTime = (str) => {
     let LocalTime = now.toLocaleTimeString();
     return LocalTime;
   } else if (str == "l") {
-    let localMonth = now.toLocaleDateString();
+    let localMonth = now.toLocaleDateString("ru-Uz");
     return localMonth;
   } else if (str == "L") {
     let localNumber = month < 10 ? `0${month}` : month;
@@ -69,14 +69,14 @@ const getTime = (str) => {
     let getLocalTime = hours >= 12 ? "PM" : "AM";
     let oyName = monthNames2[month];
     return `${oyName} ${day}, ${year} ${hours}:${minut} ${getLocalTime}`;
-  } else if (str == "LLLL") {
+  } else if (str == "LLL") {
     let getLocalTime = hours >= 12 ? "PM" : "AM";
     let oyName = monthNames1[month];
     let kunName = dayNames[localDay];
     return `${kunName}, ${oyName} ${localDay}, ${year} ${hours}:${minut} ${getLocalTime}`;
   }
 };
-console.log(getTime("LTS"));
+console.log(getTime("l"));
 // ?? LT
 // ?? LTS
 // ?? L
