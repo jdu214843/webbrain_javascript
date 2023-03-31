@@ -35,12 +35,13 @@
 // let login = "Director";
 // let message;
 
-// login == "Employee" ? message = "Hello"
-// : (login == "Director")
-// ? message = "Greetings"
-// : (login == '')
-// ? message = "No login"
-// : (message = '')
+// login == "Employee"
+//   ? (message = "Hello")
+//   : login == "Director"
+//   ? (message = "Greetings")
+//   : login == ""
+//   ? (message = "No login")
+//   : (message = "");
 
 // console.log(message);
 
@@ -116,3 +117,54 @@
 //   return String(String(x).length).concat(b);
 // };
 // console.log(getSon(a));
+// if and else
+
+// let a = 1;
+// let b = 0;
+// let c = 2;
+
+// if (a < b && a < c) {
+//   console.log(a);
+// } else if (b < a && b < c) {
+//   console.log(b);
+// } else {
+//   console.log(c);
+// }
+
+// let login = "Director";
+// let message;
+// login == "Employee"
+//   ? (message = "Hello")
+//   : login == "Director"
+//   ? (message = "Greetings")
+//   : login == ""
+//   ? (message = "No login")
+//   : (message = "");
+
+// console.log(message);
+
+// if and else
+
+// let a = 4;
+// let b = 3;
+// let c = 2;
+
+// if (a < b && a < c) {
+//   console.log(a);
+// } else if (b < a && b < c) {
+//   console.log(b);
+// } else {
+//   console.log(c);
+// }
+
+// let message = "hello";
+// let newmessage;
+
+// message == "hello"
+//   ? (newmessage = "salom")
+//   : message == "good"
+//   ? (newmessage = "yaxshi")
+//   : message == "great"
+//   ? (newmessage = "buyuk")
+//   : message == "";
+// console.log(newmessage);

@@ -1,8 +1,4 @@
-
-
 // !! if va else bo'yicha masalalar
-
-
 
 // let a = 23000000;
 // let c = 0;
@@ -14,7 +10,6 @@
 // }
 // console.log(c);
 
-
 // let a = 372677;
 // let c = 0;
 // let b = 0;
@@ -25,8 +20,6 @@
 //     b = 0;
 // }
 // console.log(c);
-
-
 
 // var isBalanced = function(node){
 //     if(root === null) return true;
@@ -46,15 +39,12 @@
 //     return Math.max(left, right) + 1;
 // }
 
-
 // import {default as Student, sayHi} from './app.js'
 
 // let student1 = new Student("Asilbek");
 
 // console.log(student1.learn());
 // console.log(sayHi("Adilbek"));
-
-
 
 // let a = 5;
 // let b = 6;
@@ -71,21 +61,6 @@
 //     console.log(h);
 // }
 
-
-
-// let a = 27;
-// let b = 28;
-// let c = 30;
-
-// if((a > b && a > c) || (c < a && a < b)){
-//     console.log(a);
-// }else if((b > a && b < c) || (b > c && b < a)){
-//     console.log(b)
-// }else if ((a < c && c < b) || (b < c && c < a)){
-//     console.log(c)
-// }
-
-
 // if(a == b){
 //     console.log(" a son va b son teng")
 // }else if (b == c){
@@ -95,7 +70,6 @@
 // }else{
 //     console.log(c);
 // }
-
 
 // let a = 1;
 // let b = -1;
@@ -112,11 +86,7 @@
 
 // har qanday sonni yig'indisini topib beradi:
 
-
-
-
 // dictiniory masalalar yechimi ///////
-
 
 // let mapUzbEng = new Map();
 
@@ -139,7 +109,6 @@
 
 // const iterable = mapUzbEng.keys();
 
-
 // for (let i = 0; i < mapUzbEng.size; i++){
 //     console.log(iterable.next().value)
 // }
@@ -150,14 +119,10 @@
 //   console.log(key + "ning ingisizchasi " + value)
 // });
 
-
 // mapUzbEng.clear();
 // console.log(mapUzbEng);
 
-
 // mapdan foydalanish misollarda;/////////////////////////////////
-
-
 
 // var numIdenticalPairs = function(nums){
 //     let map = new Map();
@@ -179,7 +144,6 @@
 // console.log(numIdenticalPairs([1,2,3,1,1,3,]));
 // console.log(numIdenticalPairs([1,1,1,1,4,1,1,1]));
 
-
 // map missollar end
 
 // 3 ta son yig'indisini chiqarish
@@ -191,7 +155,6 @@
 
 // console.log(n+b+c);
 
-
 // let a = 298;
 // let  b = 0
 // c = 0
@@ -202,13 +165,13 @@
 //     c = a % 10;
 //     sonlar.push(c)
 //     a = (a - c) / 10;
-//     c = 0  ;   
+//     c = 0  ;
 // }
 // sonlar.sort()
 // if ( sonlar.length >= 3 ){
 //     if (sonlar.length / 2 == 0){
 //         console.log(sonlar[(sonlar.length) / 2])
-//         sum = ((sonlar.length) / 2) + 1 
+//         sum = ((sonlar.length) / 2) + 1
 //         console.log(sonlar[sum])
 //     }
 //     if ( sonlar.length / 2 != 0){
@@ -216,7 +179,6 @@
 //     }
 
 // }
-
 
 // let a = 10;
 
@@ -236,6 +198,3 @@
 // console.log(fruits);
 // const numbers = [25,90 ,21,1];
 // console.log(Math.min.apply(null,numbers));
-
-
-
