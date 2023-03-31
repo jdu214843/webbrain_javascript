@@ -1,103 +1,89 @@
 // !! data set, setmap, map
 
-const getTime = (str) => {
-  let now = new Date();
-  if (str == "LT") {
-    let hours = now.getHours();
-    let minut = now.getMinutes();
-    let getLocalTime = hours >= 12 ? "PM" : "AM";
+let now = new Date();
+let hours = now.getHours();
+let minut = now.getMinutes();
+let year = now.getFullYear();
+let localDay = now.getDay();
+let month = now.getMonth();
+let day = now.getDate();
+let getLocalTime = hours >= 12 ? "PM" : "AM";
+let dayNames = ["Yak", "Dush", "Sesh", "Chor", "Pay", "Juma", "Shan"];
+let monthNames1 = [
+  "Yanvar",
+  "Fevral",
+  "Mart",
+  "Aprel",
+  "May",
+  "Iyun",
+  "Iyul",
+  "Avgust",
+  "Sentabr",
+  "Oktabr",
+  "Noyabr",
+  "Dekabr",
+];
+let monthNames2 = [
+  "Yan",
+  "Fev",
+  "Mar",
+  "Apr",
+  "May",
+  "Iyun",
+  "Iyul",
+  "Avg",
+  "Sen",
+  "Okt",
+  "Noy",
+  "Dek",
+];
 
-    console.log(`${hours}:${minut} ${getLocalTime}`);
+const getTime = (str) => {
+  if (str == "LT") {
+    return `${hours}:${minut} ${getLocalTime}`;
   } else if (str == "LL") {
-    let year = now.getFullYear();
-    let month = now.getMonth();
-    let day = now.getDate();
-    let monthnames = [
-      "Yanvar",
-      "Fevral",
-      "Mart",
-      "Aprel",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avgust",
-      "Sentabr",
-      "Oktabr",
-      "Noyabr",
-      "Dekabr",
-    ];
-    let monthname = monthnames[month];
-    console.log(`${monthname} ${day},${year}`);
+    let monthname = monthNames1[month];
+    return `${monthname} ${day},${year}`;
   } else if (str == "LTS") {
     let LocalTime = now.toLocaleTimeString();
-    console.log(LocalTime);
+    return LocalTime;
   } else if (str == "l") {
     let localMonth = now.toLocaleDateString();
-    console.log(localMonth);
+    return localMonth;
   } else if (str == "L") {
-    let localDay = now.getMonth();
-    let getLocalDay = now.getDate();
-    let localYear = now.getFullYear();
-    let localNumber = localDay < 10 ? `0${localDay}` : localDay;
-    console.log(`${localNumber}/${getLocalDay}/${localYear}`);
+    let localNumber = month < 10 ? `0${month}` : month;
+    return `${day}/${localNumber}/${year}`;
   } else if (str == "ll") {
-    let getMonthll = now.getMonth();
-    let getDatell = now.getDate();
-    let getYearll = now.getFullYear();
-    const monthNamesll = [
-      "Yan",
-      "Fev",
-      "Mar",
-      "Apr",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avg",
-      "Sen",
-      "Okt",
-      "Noy",
-      "Dek",
-    ];
-    oynamell = monthNamesll[getMonthll];
-    console.log(`${oynamell} ${getDatell}, ${getYearll}`);
+    let oyName = monthNames2[month];
+    return `${oyName} ${day}, ${year}`;
   } else if (str == "llll") {
-    let localDayllll = now.getDay();
-    let localMonthllll = now.getMonth();
-    let localDatellll = now.getDate();
-    let localYearllll = now.getFullYear();
-    let hoursllll = now.getHours();
-    let minutllll = now.getMinutes();
-    let getLocalTimellll = hoursllll >= 12 ? "PM" : "AM";
-    const dayNames = ["Yak", "Dush", "Sesh", "Chor", "Pay", "Juma", "Shan"];
-    const monthNames = [
-      "Yan",
-      "Fev",
-      "Mar",
-      "Apr",
-      "May",
-      "Iyun",
-      "Iyul",
-      "Avg",
-      "Sen",
-      "Okt",
-      "Noy",
-      "Dek",
-    ];
-    oyName = monthNames[localMonthllll];
-    kunName = dayNames[localDayllll];
-    console.log(
-      `${kunName}, ${oyName} ${localDatellll}, ${localYearllll} ${hoursllll}:${minutllll} ${getLocalTimellll}`
-    );
+    let getLocalTime = hours >= 12 ? "PM" : "AM";
+    let oyName = monthNames1[month];
+    let kunName = dayNames[localDay];
+    return `${kunName}, ${oyName} ${day}, ${year} ${hours}:${minut} ${getLocalTime}`;
+  } else if (str == "LLL") {
+    let getLocalTime = hours >= 12 ? "PM" : "AM";
+    let monthname = monthNames1[month];
+    return `${monthname} ${day}, ${year} ${hours}:${minut} ${getLocalTime}`;
+  } else if (str == "lll") {
+    let getLocalTime = hours >= 12 ? "PM" : "AM";
+    let oyName = monthNames2[month];
+    return `${oyName} ${day}, ${year} ${hours}:${minut} ${getLocalTime}`;
+  } else if (str == "LLLL") {
+    let getLocalTime = hours >= 12 ? "PM" : "AM";
+    let oyName = monthNames1[month];
+    let kunName = dayNames[localDay];
+    return `${kunName}, ${oyName} ${localDay}, ${year} ${hours}:${minut} ${getLocalTime}`;
   }
 };
-getTime("ll");
-
+console.log(getTime("LTS"));
 // ?? LT
 // ?? LTS
 // ?? L
 // ?? l
 // ?? ll
-// !! LLL
-// !! lll
-// !! LLLL
+// ?? LL
+// ?? LLL
+// ?? lll
+// ?? LLLL
 // ?? llll
