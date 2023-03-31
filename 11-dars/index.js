@@ -5,25 +5,25 @@
 // let num  = [1,3,4,5,6,0];
 // let str = ['orange', 'apple', 'banana', "kivi"];
 
-// let obj = [
-//     {id: 1, year : 2003, name:"asilbek"},
-//     {id: 2, year : 2002, name:"jasur"},
-//     {id: 3, year : 1995, name:"javohir"},
-//     {id: 4, year : 2002, name:"sardor"},
-//     {id: 5, year : 2003, name:"saidasror"},
-//     {id: 6, year : 2002, name:"Muhammadsiddiq"},
-//     {id: 7, year : 2002, name:"Muhammadsodiq"},
-//     {id: 8, year : 2002, name:"Muhammadsaid"},
-// ];
+let obj = [
+  { id: 1, year: 2003, name: "asilbek" },
+  { id: 2, year: 2002, name: "jasur" },
+  { id: 3, year: 1995, name: "javohir" },
+  { id: 4, year: 2002, name: "sardor" },
+  { id: 5, year: 2003, name: "saidasror" },
+  { id: 6, year: 2002, name: "Muhammadsiddiq" },
+  { id: 7, year: 2002, name: "Muhammadsodiq" },
+  { id: 8, year: 2002, name: "Muhammadsaid" },
+];
 
-// let res  = obj.filter((value)=>value.id >= 5)
-// let res = str.filter(function(value, index){
-//     return value.length <= 5
+// let res = obj.filter((value) => value.id >= 5);
+// let res = obj.filter(function (value, index) {
+//   return value.length <= 5;
 // });
-// let res = num.filter((value,index)=>{
-//     return  value < 5
-// });
-// console.log(res)
+// // let res = num.filter((value, index) => {
+// //   return value < 5;
+// // });
+// console.log(res);
 
 // !! ------
 
@@ -32,63 +32,66 @@
 // Object ichidagi Boolean tipidagi malumotlarni chiqaring keylari bilan birga?
 
 // let obj3 = {
-//     id: 1,
-//     name: "webbrain",
-//     offline: true,
-//     online: true,
-//     individual: false,
-//   };
+//   id: 1,
+//   name: "webbrain",
+//   offline: true,
+//   online: true,
+//   individual: false,
+// };
 
-//   const getBoolean = (obj) => {
-//     let res = ``;
-//     for (key in obj) {
-//       if (typeof obj[key] === "boolean") res += ` ${key} : ${obj[key]}`; ;
-//     }
-//     return res;
-//   };
-//   console.log(getBoolean(obj3));
+// const getBoolean = (obj) => {
+//   let res = ``;
+//   for (key in obj) {
+//     if (typeof obj[key] === "boolean") res += ` ${key} : ${obj[key]}`;
+//   }
+//   return res;
+// };
+// console.log(getBoolean(obj3));
 
 // 2 - Masala:
 // Ojbect ichidagi agelar yigindisini toping ?
 
 // let obj2 = {
-//     title: "Webbrain",
-//     age: 2,
+//   title: "Webbrain",
+//   age: 2,
+//   child: {
+//     age: 44,
+//     name: "Webbrain",
 //     child: {
-//       age: 44,
-//       name: "Webbrain",
-//       child: {
-//         age: 23,
-//       },
+//       age: 23,
 //     },
-//   };
-//   const getObjAge = (obj) => {
-//     let res = 0;
-//     while (obj2) {
-//       res += obj2.age;
-//       obj2 = obj2.child;
-//     }
-//     return res;
+//   },
 // };
-//  console.log(getObjAge(obj2));
+// const getAge = (obj2) => {
+//   let res = 0;
+//   while (obj2) {
+//     res += obj2.age;
+//     obj2 = obj2.child;
+//   }
+//   return res;
+// };
+// console.log(getAge(obj2));
 
 // !! sonlarning o'rta arifmetigini topish
 
 // function test(A, S) {
-//     let count = 0;
-//     let n = 0;
-//     while (n < A.length) {
-//       for(let i=n;i<=A.length;i++){
-//           let fragment=A.slice(n,i)
-//           if(fragment.length){
-//               eval(`(${fragment.join("+")})/${fragment.length}`)===S?count++:null;
-//           }
+//   let count = 0;
+//   let n = 0;
+//   while (n < A.length) {
+//     for (let i = n; i <= A.length; i++) {
+//       let fragment = A.slice(n, i);
+//       console.log(fragment);
+//       if (fragment.length) {
+//         eval(`(${fragment.join("+")})/${fragment.length}`) === S
+//           ? count++
+//           : null;
 //       }
-//       n++;
 //     }
-//     return count;
+//     n++;
 //   }
-//   console.log(test([0, 4, 3, -1], 2));
+//   return count;
+// }
+// console.log(test([0, 4, 3, -1], 2));
 
 // !! string masalalar
 // !! masala
@@ -145,17 +148,17 @@
 // !! 4 -masala
 // string ichidagi raqamlarni aniqlang
 
-// let num = "we2bbrain44 aca3demy"
-// const getNum = (str)=>{
-//     let res = ""
-//     for(i of str){
-//         if(Number(i)){
-//             res += i
-//         }
+// let num = "we2bbrain44 aca3demy";
+// const getNum = (str) => {
+//   let res = "";
+//   for (i of str) {
+//     if (Number(i)) {
+//       res += i;
 //     }
-//     return +res
-// }
-// console.log(getNum(num))
+//   }
+//   return +res;
+// };
+// console.log(getNum(num));
 
 // !! 5 - Masala:
 // String berilgan stringning har bir belgisini 2marta takrorlang ?
@@ -166,7 +169,6 @@
 //   let res = "";
 //   for (value of str) {
 //     res += value + value;
-
 //   }
 
 //   return res;
@@ -178,10 +180,10 @@
 // let str6 = "kiyik";
 
 // const getPolendrom = (str) => {
-//   let polindrom = str.split("").reverse().join("");
+//   let polindrom = str.split("").reverse().join();
 //   return polindrom === str;
 // };
-// console.log(getPolendrom(str6))
+// console.log(getPolendrom(str6));
 
 // !! 7 - masala
 // Berilgan stringdagi harflar soni bir biriga teng yoki teng emasligini aniqlang. Tartib muhim emas.
@@ -212,9 +214,9 @@
 // const getCharNum = (str) => {
 //   let res = {};
 //   for (value of str) {
-//     if(res[value]) res[value]++
-//     else  (res[value] = 1);
-//     }
+//     if (res[value]) res[value]++;
+//     else res[value] = 1;
+//   }
 //   return res;
 // };
 
@@ -234,8 +236,8 @@
 //     else {
 //       res += str[i];
 //       if (count > 1) {
-//           res += count;
-//           console.log(res)
+//         res += count;
+//         console.log(res);
 //         count = 1;
 //       }
 //     }
@@ -248,25 +250,26 @@
 
 // !! Binary masala
 
-// let res = 5766;
-// let count = 0;
-// let r = 0;
-// let isStartCount = false;
+let res = 5766;
+let count = 0;
+let r = 0;
+let isStartCount = false;
 
-// const getBinary = (res1) => {
-//   s = res1.toString(2);
-//   for (char of s) {
-//     if (char == "1") {
-//       r = count > r ? count : r;
-//       count = 0;
-//       isStartCount = true;
-//     } else if (isStartCount) {
-//       count++;
-//     }
-//   }
-//   console.log(`nol: ${r}`);
-// };
-// getBinary(res);
+const getBinary = (res1) => {
+  s = res1.toString(2);
+  console.log(+s);
+  for (char of s) {
+    if (char == "1") {
+      r = count > r ? count : r;
+      count = 0;
+      isStartCount = true;
+    } else if (isStartCount) {
+      count++;
+    }
+  }
+  console.log(`nol: ${r}`);
+};
+getBinary(res);
 
 // ----------------------- Array Boyicha Masalalar:
 
