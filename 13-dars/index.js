@@ -83,9 +83,11 @@ let monthNames2 = [
 //     let oyName = monthNames1[month];
 //     let kunName = dayNames2[localDay];
 //     return `${kunName}, ${oyName} ${localDay}, ${year} ${hours}:${minut} ${getLocalTime}`;
+//   } else {
+//     return "bu turdagi qiymat mavjud emas";
 //   }
 // };
-// console.log(getTime("LLLL"));
+// console.log(getTime("L"));
 
 function getData(str) {
   switch (str) {
@@ -143,10 +145,13 @@ function getData(str) {
       console.log(
         `${kunName3}, ${oyName5} ${day}, ${year} ${hours}:${minut} ${getLocalTime5}`
       );
+      break;
+    default:
+      console.log("bu turdagi qiymat mavjud emas");
   }
 }
 
-getData("llll");
+getData("llls");
 
 // ?? LT
 // ?? LTS
