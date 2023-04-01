@@ -146,7 +146,7 @@ function getData(str) {
   }
 }
 
-getData("LLLL");
+getData("llll");
 
 // ?? LT
 // ?? LTS
