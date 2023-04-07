@@ -115,3 +115,15 @@ getData("llll");
 // ?? lll
 // ?? LLLL
 // ?? llll
+
+function getGroup(data) {
+  let res = {};
+  data.filter((value) => {
+    if (!res[value.title]) {
+      res[value.title] = [];
+    }
+    res[value.title].push(value);
+  });
+  return res;
+}
+console.log(getGroup(list));

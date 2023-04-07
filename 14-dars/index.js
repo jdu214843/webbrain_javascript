@@ -29,20 +29,19 @@
 
 let list = [
   { id: 1, name: "eshmat", title: "CEO" },
+  { id: 1, name: "eshmat", title: "CEO" },
   { id: 2, name: "toshmat", title: "CTO" },
-  { id: 3, name: "eshmat", title: "CTO" },
   { id: 4, name: "toshmat", title: "SES" },
+  { id: 3, name: "eshmat", title: "CTO" },
   { id: 5, name: "toshmat", title: "SES" },
 ];
 
-function getGroup(data) {
-  let res = {};
-  data.filter((value) => {
-    if (!res[value.title]) {
-      res[value.title] = [];
-    }
+const getTitle = (data) => {
+  let res = [];
+  data.map((value) => {
+    res[value.title] = new Array();
     res[value.title].push(value);
   });
   return res;
-}
-console.log(getGroup(list));
+};
+console.log(getTitle(list));
