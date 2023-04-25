@@ -13,12 +13,14 @@ let user = {
 //   console.log(value);
 // }
 
-let range = {
-  from: 1,
-  to: 10,
-};
-let proxy = new Proxy(range, {
-  has(target, prop) {
-    return target.from >= prop && target.to <= prop;
-  },
-});
+// let range = {
+//   from: 1,
+//   to: 10,
+// };
+// let proxy = new Proxy(range, {
+//   has(target, prop) {
+//     return target.from <= prop && target.to >= prop;
+//   },
+// });
+
+// console.log(100 in proxy);
