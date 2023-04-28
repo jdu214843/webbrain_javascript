@@ -1,11 +1,10 @@
 // !! 4 - dars Switch statement and For Loops
 
-
 // if --> <> , <= >=, == ===
 // switch -> ===
 // let data = 'bulut'
 // switch(data){
-    // case 'yomgir':  
+// case 'yomgir':
 //         console.log("bugun yomgir");
 //         console.log("bugun yomgir");
 //     break;
@@ -14,12 +13,11 @@
 //         console.log("bugun qor");
 
 //         default: console.log("no data")
-// } 
-// !! case -  data aniq ma'lum bir qiymatga teng bo'lishini kutadi: 
+// }
+// !! case -  data aniq ma'lum bir qiymatga teng bo'lishini kutadi:
 // !! case aniq qiymatga teng bo'lishi kerak:
 
 // ?? if dan farqi exicet: aniq ma'lumot qabul qiladi: va condition dek katta yoki kichik qabul qilmaydi:
-
 
 // ?? Foor Loops
 
@@ -28,8 +26,6 @@
 // for( i = 0; i <= 10; i++){
 //     console.log(i)
 // };
-
-
 
 // console.log(c);
 // let browser
@@ -60,20 +56,35 @@
 //     alert('2,3');
 // }
 
-
 // let a = 35235;
-// let b = 0;
-// let c = 0;
-// while(a > 0){
-//     c = c + (a % 10);
-//     b = a % 10;
-//     console.log(b);
+// let res = 0;
+// let sum = 0;
+// while (a > 0) {
+//   sum = sum + (a % 10);
+//   res = a % 10;
+//   //   console.log(b);
 
-//     a = (a - b) / 10;
-//     console.log(a);
+//   a = (a - res) / 10;
 
-//     b = 0;
+//   res = 0;
 // }
+// console.log(sum);
+let result = 0;
+
+const getTotal = function (num) {
+  let res;
+  if (num > 0) {
+    res = num % 10;
+    result += res;
+    num -= res;
+    num /= 10;
+    return getTotal(num);
+  } else {
+    return result;
+  }
+};
+let s = 123145644;
+console.log(getTotal(s));
 
 // a = false;
 // b = true;
@@ -88,7 +99,6 @@
 // } else {
 //     console.log('nothing');
 // }
-
 
 // if (a) {
 //     console.log('a');
