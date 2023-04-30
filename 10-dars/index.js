@@ -78,51 +78,51 @@ let users = [
   { id: 7, year: 2018, engine: 2.4, name: "Tracker" },
 ];
 
-// let result = users.map((v)=>{
-//   if(v.year < 2000){
-//     return (Object.assign(v,{status:"eski"}))
-//   }else if(v.year > 2000 && v.year < 2010){
-//     return (Object.assign(v,{status:"o'rta"}))
-//   }else if(v.year > 2010 && v.year < 2022){
-//     return(Object.assign(v,{status:"yangi"}))
+// let result = users.map((v) => {
+//   if (v.year < 2000) {
+//     return Object.assign(v, { status: "eski" });
+//   } else if (v.year > 2000 && v.year < 2010) {
+//     return Object.assign(v, { status: "o'rta" });
+//   } else if (v.year > 2010 && v.year < 2022) {
+//     return Object.assign(v, { status: "yangi" });
 //   }
-// })
-// console.log(users)
+// });
+// console.log(users);
 
 // console.log(arrOfObj);
 // console.log(result);
 
-// const newStatus = users.map(v => {
-//   return v.value > 2000 ? {...v, status: "eski"} : v
-// })
-// console.log(newStatus)
-// console.log(users)
+// const newStatus = users.map((v) => {
+//   return v.value > 2000 ? { ...v, status: "eski" } : v;
+// });
+// console.log(newStatus);
+// console.log(users);
 
-const getData = (users) => {
-  let res = users.filter((value, index) => {
-    return value.year < 2000;
-  });
-  console.log(res);
-};
-getData(users);
+// const getData = (users) => {
+//   let res = users.filter((value, index) => {
+//     return value.year < 2000;
+//   });
+//   console.log(res);
+// };
+// getData(users);
 
-// -------------------------------
+// // -------------------------------
 
-const getSort = (users) => {
-  let resSort = users.sort((a, b) => {
-    return a.engine - b.engine;
-  });
-  console.log(resSort);
-};
-getSort(users);
+// const getSort = (users) => {
+//   let resSort = users.sort((a, b) => {
+//     return a.engine - b.engine;
+//   });
+//   console.log(resSort);
+// };
+// getSort(users);
 
-const getAlphaSort = () => {
-  let resSort = users.sort((a, b) => a.name.localeCompare(b.name));
-  console.log(resSort);
-};
-getAlphaSort();
+// const getAlphaSort = () => {
+//   let resSort = users.sort((a, b) => a.name.localeCompare(b.name));
+//   console.log(resSort);
+// };
+// getAlphaSort();
 
-let a = 5;
+// let a = 5;
 
 // ?? 2000 yildan oldinga mashinalar ro'yhatini chigaring
 // ?? 2010 yildan keyingi chiggan mashinalar ro'yhatini chigaring
