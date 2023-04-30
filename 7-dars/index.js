@@ -1,6 +1,5 @@
 // ?? Objects 2
 
-
 // let obj = {
 //     name : "webbrain",
 //     age: 23,
@@ -61,11 +60,9 @@
 // obj4.name = "saidamin"
 // console.log(obj5== obj4)
 
-
 // function sayHi(){
 //     console.log("hello")
 
-    
 // }
 // let user = {
 //     name : "webbrain",
@@ -82,7 +79,7 @@
 
 // let id1 = Symbol("id1")
 // let id2 = Symbol("id1")
-// // console.log(id1); 
+// // console.log(id1);
 
 // let name = "symbol"
 // let obj = {
@@ -93,50 +90,44 @@
 //     }
 // }
 
-
-
-
-
 /*object ichida objectlar berilgan. ichki objectlarning ichiga age degan key berilgan. barcha ichki keylardagi age lar yigindisini toping*/
 
-// let person = {
-//     id: 1,
-//     name: 'Odil',
-//     age:78,
-//     child: {
-//         id: 1,
-//         name: 'Ali',
-//         age:48,
-//         child: {
-//             id: 1,
-//             name: 'Umar',
-//             age:20
-//         }
-//     }
+let person = {
+  id: 1,
+  name: "Odil",
+  age: 78,
+  child: {
+    id: 1,
+    name: "Ali",
+    age: 48,
+    child: {
+      id: 1,
+      name: "Umar",
+      age: 20,
+    },
+  },
+};
+
+// function sumOfObj(obj) {
+//   if (obj.child !== undefined) return obj.age + sumOfObj(obj.child);
+//   return obj.age;
 // }
+// console.log(sumOfObj(person));
+let sum = 0;
+while (person) {
+  sum += person.age;
+  person = person.child;
+}
 
-// function sumOfObj(obj){
-//     if (obj.child !== undefined) return obj.age + sumOfObj(obj.child)
-//     return obj.age;
-// }
-// console.log(sumOfObj(person))
-// let sum = 0;
-// while(person){
-//     sum += person.age;
-//     person = person.child
-// }
+console.log(sum);
 
-// console.log(sum);
-
-
-
-function getName(){
-    console.log(new.target)
+// function getName() {
+//   console.log(new.target);
 //     this.name = "webbrain";
 //     this.sayHi = function (){
 //         console.log(this)
 //         return this;
 //     }
-}
-new getName("eshmat")
-// console.log((new getName().sayHi())); 
+// }
+// new getName("eshmat");
+// console.log((new getName().sayHi()));
