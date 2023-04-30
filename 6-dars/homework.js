@@ -1,4 +1,4 @@
-// ?? Homework 
+// ?? Homework
 
 // 1-masala
 
@@ -70,65 +70,62 @@
 // }
 // console.log(sum)
 
-
 // !! 6-masala
 
-// let menu = {
-//     width: 200,
-//     height: 300,
-//     title:"My menu",
-// }
-// for(let i in menu){
-//     if(typeof menu[i] == "number"){
-//         menu[i] *= 2
-//     }
-// }
-// function display(menu){
-//     for(const i in menu){
-//         console.log(menu[i]);
-//     }
-// }
-// display(menu)
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu",
+};
+for (let i in menu) {
+  if (typeof menu[i] == "number") {
+    menu[i] *= 2;
+  }
+}
+function display(menu) {
+  for (const i in menu) {
+    console.log(menu[i]);
+  }
+}
+display(menu);
 
 // !! 7 - masala
 
 let user = {
-    id: 1,
-    name: 'Odil',
-    age: 78,
-    children: [
-        {
-            id: 1,
-            name: 'Umar',
-            age: 54,
-            children: [
-                {id: 1, name: 'Asmo', age: 34},
-                {id: 2, name: 'Osim', age: 0},
-                {id: 3, name: 'Xattob', age: 15},
-            ]
-        },
-        {id: 2, name: 'Laylo', age: 14},
-        {id: 3, name: 'Soliha', age: 12},
-    ]
-}
+  id: 1,
+  name: "Odil",
+  age: 78,
+  children: [
+    {
+      id: 1,
+      name: "Umar",
+      age: 54,
+      children: [
+        { id: 1, name: "Asmo", age: 34 },
+        { id: 2, name: "Osim", age: 0 },
+        { id: 3, name: "Xattob", age: 15 },
+      ],
+    },
+    { id: 2, name: "Laylo", age: 14 },
+    { id: 3, name: "Soliha", age: 12 },
+  ],
+};
 
-function getAges(object) {
-    function sumOfObj(object, array = []) {
-        let ages = array;
-        ages.push(object.age);
-        if (object.children !== undefined) {
-            for (let person of object.children) {
-                ages = sumOfObj(person,  ages);
-            }
-        }
-        return ages;
-    }
+// function getAges(object) {
+//   function sumOfObj(object, array = []) {
+//     let ages = array;
+//     ages.push(object.age);
+//     if (object.children !== undefined) {
+//       for (let person of object.children) {
+//         ages = sumOfObj(person, ages);
+//       }
+//     }
+//     return ages;
+//   }
 
-    return sumOfObj(object);
-}
+//   return sumOfObj(object);
+// }
 
-console.log(getAges(user));
+// console.log(getAges(user));
 
-
-
-// 
+//
