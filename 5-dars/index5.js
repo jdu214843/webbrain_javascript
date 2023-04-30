@@ -1,8 +1,6 @@
 // ?? 5-dars Do while and while | function
 
-
-// !! uyga vazifa oxirida 
-
+// !! uyga vazifa oxirida
 
 // let a = 3;
 
@@ -18,9 +16,9 @@
 
 // }
 
-// ?? Function 
+// ?? Function
 
-// !! 
+// !!
 
 // let id = 1;
 // console.log(id)
@@ -36,35 +34,31 @@
 
 // getAvr()
 
-const getAvr = function(){
-        console.log('Asilbek, Welcome to Webbrain');
-    
-}
-getAvr()
+const getAvr = function () {
+  console.log("Asilbek, Welcome to Webbrain");
+};
+getAvr();
 
 // ?? agar functionni expretion ko'rinishida yozib va funsiyani tepada chaqirilsa
 // ?? error beradi.agar pasda chaqirilsa ishlaydi
 
 // !! hoisting degani variable mi yoki function mi doim tepaga olib chiqib declear qilish deyiladi.
- 
+
 // callback function nima?
 
 // functionlarni ichida parametr sifatida boshqa bir function ulash.
 
-
-
 // Arrow function
 // const getAvr =()=>{}
 
-
-// defeult parametres if || 
+// defeult parametres if ||
 
 // const telegram = (name, surname) => {
-    // if(surname) console.log(name, surname);
-    // else console.log(name)
-    //  ||, ??
-    // surname ? console.log(name, surname): console.log(name)
-    // console.log(name, surname || "")
+// if(surname) console.log(name, surname);
+// else console.log(name)
+//  ||, ??
+// surname ? console.log(name, surname): console.log(name)
+// console.log(name, surname || "")
 // }
 
 // telegram("", "asilbek");
@@ -86,15 +80,15 @@ getAvr()
 
 // console.log()
 
-// !! 
+// !!
 // const getNum = (a) => {
-    // console.log(a)
-//     let total = 193;
-    // console.log((a * 100) / total)
-//     return (a * 100) / total
-// }
- 
-// console.log(parseInt(getNum(159)))
+//   console.log(a);
+//   let total = 193;
+//   console.log((a * 100) / total);
+//   return (a * 100) / total;
+// };
+
+// console.log(parseInt(getNum(159)));
 
 // const gpa = (a=0,b=0,c=0,d=0) => {
 //     let res = (a + b + c +d) / 4
@@ -107,10 +101,8 @@ getAvr()
 
 // ?? clean code - bu functionga mos qilib nomlash masalan gpa() bo'lsa buni getGpa deb nomalash clean code bo'ladi.
 //  kalit so'zlari
-// get , calc , create , check , 
+// get , calc , create , check ,
 // camel case katta kichik harf bilan yozish:
-
-
 
 // ?? vazifalar:
 
@@ -120,7 +112,6 @@ getAvr()
 //     i++;
 //     console.log(i)
 // };
-
 
 // 2 - masala
 // let age = 20
@@ -141,9 +132,9 @@ getAvr()
 //         console.log(a)
 
 //     }
-    // else if(a == b){
-    //     console.log("a va b son teng")
-    // }
+// else if(a == b){
+//     console.log("a va b son teng")
+// }
 //     else{
 //         console.log(b)
 
